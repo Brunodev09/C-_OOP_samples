@@ -1,0 +1,20 @@
+04:13:06 **** Incremental Build of configuration Debug for project inheritance ****
+make all 
+Building file: ../index.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"index.d" -MT"index.o" -o "index.o" "../index.cpp"
+Finished building: ../index.cpp
+ 
+Building file: ../inheritance.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"inheritance.d" -MT"inheritance.o" -o "inheritance.o" "../inheritance.cpp"
+Finished building: ../inheritance.cpp
+ 
+Building target: inheritance
+Invoking: GCC C++ Linker
+g++  -o "inheritance"  ./index.o ./inheritance.o   
+Finished building target: inheritance
+ 
+
+04:13:07 Build Finished. 0 errors, 0 warnings. (took 868ms)
+

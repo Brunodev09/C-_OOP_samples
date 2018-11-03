@@ -1,0 +1,19 @@
+#include <iostream>
+#include "class.h"
+using namespace std;
+
+void dynamic();
+
+//Its good practice to keep classes objects private, and use public functions to alter them
+int main() {
+	Person person;
+
+	cout << person.getAge() << endl;
+	person.setAge(21);
+	cout << person.getAge() << endl;
+	return 0;
+}
+
+void dynamic() {
+
+}

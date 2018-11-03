@@ -1,0 +1,15 @@
+02:07:46 **** Incremental Build of configuration Debug for project files_2 ****
+make all 
+Building file: ../files_2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_2.d" -MT"files_2.o" -o "files_2.o" "../files_2.cpp"
+Finished building: ../files_2.cpp
+ 
+Building target: files_2
+Invoking: GCC C++ Linker
+g++  -o "files_2"  ./files_2.o   
+Finished building target: files_2
+ 
+
+02:07:47 Build Finished. 0 errors, 0 warnings. (took 670ms)
+

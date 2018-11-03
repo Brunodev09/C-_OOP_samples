@@ -1,0 +1,32 @@
+/*
+ * app.cpp
+ *
+ *  Created on: Oct 2, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "exception.h"
+
+using namespace std;
+
+double division(double a, double b) {
+	if(b==0) throw b;
+	return a/b;
+}
+
+int main() {
+
+	double result;
+
+	try {
+		result = division(5,0);
+	} catch (int error) {
+
+	} catch (...) {
+		cout << "This is like an else statement. It will catch every other types other than int" << endl;
+	}
+
+	return 0;
+}
+

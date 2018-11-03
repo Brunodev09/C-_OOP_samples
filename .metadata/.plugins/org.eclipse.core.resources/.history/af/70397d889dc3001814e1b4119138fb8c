@@ -1,0 +1,20 @@
+/*
+ * class.h
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#ifndef CLASS_H_
+#define CLASS_H_
+
+
+class Person {
+private:
+	short age = 0;
+public:
+
+};
+
+
+#endif /* CLASS_H_ */

@@ -1,0 +1,15 @@
+21:23:18 **** Incremental Build of configuration Debug for project bitwise_op ****
+make all 
+Building file: ../bit.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bit.d" -MT"bit.o" -o "bit.o" "../bit.cpp"
+Finished building: ../bit.cpp
+ 
+Building target: bitwise_op
+Invoking: GCC C++ Linker
+g++  -o "bitwise_op"  ./bit.o   
+Finished building target: bitwise_op
+ 
+
+21:23:19 Build Finished. 0 errors, 0 warnings. (took 622ms)
+

@@ -1,0 +1,509 @@
+02:15:23 **** Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:17:57 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:19:22 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:20:29 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:21:54 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:21:59 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+make: Nothing to be done for 'all'.
+02:22:03 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+make: Nothing to be done for 'all'.
+02:34:42 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:15: warning: ‘buffer’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   file.getline(buffer, 50);
+   ~~~~~~~~~~~~^~~~~~~~~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:35:31 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:24:18: error: expected identifier before numeric constant
+   char buffer = [50];//dynamic array of chars
+                  ^~
+../files_3.cpp: In lambda function:
+../files_3.cpp:24:21: error: expected ‘{’ before ‘;’ token
+   char buffer = [50];//dynamic array of chars
+                     ^
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:24:21: error: invalid user-defined conversion from ‘main()::<lambda()>’ to ‘char’ [-fpermissive]
+../files_3.cpp:24:20: note: candidate is: main()::<lambda()>::operator void (*)()() const <near match>
+   char buffer = [50];//dynamic array of chars
+                    ^
+../files_3.cpp:24:20: note:   no known conversion from ‘void (*)()’ to ‘char’
+../files_3.cpp:25:26: error: invalid conversion from ‘char’ to ‘std::basic_istream<char>::char_type* {aka char*}’ [-fpermissive]
+   file.getline(buffer, 50);
+                          ^
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../files_3.cpp:9:
+/usr/include/c++/7/istream:427:7: note:   initializing argument 1 of ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]’
+       getline(char_type* __s, streamsize __n)
+       ^~~~~~~
+make: *** [files_3.o] Error 1
+subdir.mk:18: recipe for target 'files_3.o' failed
+02:36:48 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:24:18: error: expected identifier before numeric constant
+   char buffer = [150];//dynamic array of chars
+                  ^~~
+../files_3.cpp: In lambda function:
+../files_3.cpp:24:22: error: expected ‘{’ before ‘;’ token
+   char buffer = [150];//dynamic array of chars
+                      ^
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:24:22: error: invalid user-defined conversion from ‘main()::<lambda()>’ to ‘char’ [-fpermissive]
+../files_3.cpp:24:21: note: candidate is: main()::<lambda()>::operator void (*)()() const <near match>
+   char buffer = [150];//dynamic array of chars
+                     ^
+../files_3.cpp:24:21: note:   no known conversion from ‘void (*)()’ to ‘char’
+../files_3.cpp:25:26: error: invalid conversion from ‘char’ to ‘std::basic_istream<char>::char_type* {aka char*}’ [-fpermissive]
+   file.getline(buffer, 50);
+                          ^
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../files_3.cpp:9:
+/usr/include/c++/7/istream:427:7: note:   initializing argument 1 of ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]’
+       getline(char_type* __s, streamsize __n)
+       ^~~~~~~
+make: *** [files_3.o] Error 1
+subdir.mk:18: recipe for target 'files_3.o' failed
+02:37:08 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:37:51 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:39:06 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:39:12 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:55:33 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:33:4: warning: ‘ch’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    if(ch == '\n') lines++;
+    ^~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:55:47 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:33:4: warning: ‘ch’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    if(ch == '\n') lines++;
+    ^~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+02:58:31 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:30:23: error: no matching function for call to ‘std::basic_fstream<char>::getline(char [50])’
+    file.getline(buffer);
+                       ^
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../files_3.cpp:9:
+/usr/include/c++/7/istream:647:5: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize, std::basic_istream<_CharT, _Traits>::char_type) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]
+     basic_istream<char>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/istream:647:5: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/7/istream:427:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]
+       getline(char_type* __s, streamsize __n)
+       ^~~~~~~
+/usr/include/c++/7/istream:427:7: note:   candidate expects 2 arguments, 1 provided
+subdir.mk:18: recipe for target 'files_3.o' failed
+make: *** [files_3.o] Error 1
+02:58:58 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:00:10 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:01:07 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:27:27: error: expected primary-expression before ‘]’ token
+   char *buffer = new char[];
+                           ^
+../files_3.cpp:30:28: error: no matching function for call to ‘std::basic_fstream<char>::getline(char*&)’
+   while(file.getline(buffer)) {
+                            ^
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../files_3.cpp:9:
+/usr/include/c++/7/istream:647:5: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize, std::basic_istream<_CharT, _Traits>::char_type) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]
+     basic_istream<char>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/istream:647:5: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/7/istream:427:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]
+       getline(char_type* __s, streamsize __n)
+       ^~~~~~~
+/usr/include/c++/7/istream:427:7: note:   candidate expects 2 arguments, 1 provided
+make: *** [files_3.o] Error 1
+subdir.mk:18: recipe for target 'files_3.o' failed
+03:01:14 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:27:27: error: expected primary-expression before ‘]’ token
+   char *buffer = new char[];
+                           ^
+../files_3.cpp:30:36: error: invalid conversion from ‘char*’ to ‘std::streamsize {aka long int}’ [-fpermissive]
+   while(file.getline(buffer, buffer)) {
+                                    ^
+In file included from /usr/include/c++/7/iostream:40:0,
+                 from ../files_3.cpp:9:
+/usr/include/c++/7/istream:427:7: note:   initializing argument 2 of ‘std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, std::streamsize) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::char_type = char; std::streamsize = long int]’
+       getline(char_type* __s, streamsize __n)
+       ^~~~~~~
+subdir.mk:18: recipe for target 'files_3.o' failed
+make: *** [files_3.o] Error 1
+03:02:36 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:02:46 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+make: Nothing to be done for 'all'.
+03:10:23 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:10:33 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:12:08 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:12:46 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:14:12 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:14:38 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:17:12 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:23:31 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:25:32 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:25:52 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:26:17 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+03:26:26 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 

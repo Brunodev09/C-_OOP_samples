@@ -1,0 +1,19 @@
+01:00:28 **** Incremental Build of configuration Debug for project files_1 ****
+make all 
+Building file: ../files.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files.d" -MT"files.o" -o "files.o" "../files.cpp"
+../files.cpp: In function ‘int main()’:
+../files.cpp:61:13: warning: variable ‘sizeOfFile’ set but not used [-Wunused-but-set-variable]
+   streampos sizeOfFile = fileHandler.tellg();//tellg returns type streampos
+             ^~~~~~~~~~
+Finished building: ../files.cpp
+ 
+Building target: files_1
+Invoking: GCC C++ Linker
+g++  -o "files_1"  ./files.o   
+Finished building target: files_1
+ 
+
+01:00:28 Build Finished. 0 errors, 1 warnings. (took 667ms)
+

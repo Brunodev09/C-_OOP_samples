@@ -1,0 +1,35 @@
+/*
+ * integer.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "integer.h"
+
+using namespace std;
+
+Integer::Integer() {
+	cout << endl << "Convert constructor invoked!";
+}
+
+Integer::Integer(int num) {
+	this->num = num;
+}
+
+
+int Integer::getNum() {
+	return num;
+}
+
+Integer::operator int() {
+	return this->num; //No idea why I need to specify this here.
+}
+
+Integer::~Integer() {
+	cout << endl << "Destructor invoked!";
+}
+
+
+

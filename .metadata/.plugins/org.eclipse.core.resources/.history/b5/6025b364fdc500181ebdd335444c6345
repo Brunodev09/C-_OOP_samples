@@ -1,0 +1,56 @@
+
+
+#ifndef TEMP_H_
+#define TEMP_H_
+
+#include <iostream>
+
+using namespace std;
+
+template<typename P>//This creates the template of a class. Definitions of func must be on the same file
+
+class Point {
+protected:
+	P x;
+public:
+	Point(P =0);
+	~Point();
+	P getX();
+	void setX(P);
+};
+template<typename P>
+Point<P>::Point(P x) {
+	this->x = x;
+}
+template<typename P>
+P Point<P>::getX() {
+	return x;
+}
+template<typename P>
+void Point<P>::setX(P x) {
+	this->x = x;
+	cout << "I'm from Point!" << endl;
+}
+template<typename P>
+Point<P>::~Point() {
+
+}
+
+template<typename P>
+class Point2D : public Point<P> {
+protected:
+	P y;
+public:
+	Point2D(P =0, P =0);
+	~Point2D();
+	int getY();
+	void setY(int);
+	void set(int, int);
+	void setX(int);
+	Point2D operator+(Point2D);
+
+};
+
+
+
+#endif /* TEMP_H_ */

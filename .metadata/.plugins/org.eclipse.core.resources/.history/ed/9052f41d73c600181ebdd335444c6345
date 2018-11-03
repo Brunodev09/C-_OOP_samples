@@ -1,0 +1,25 @@
+/*
+ * app.cpp
+ *
+ *  Created on: Oct 2, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "exception.h"
+
+using namespace std;
+
+int main() {
+
+	int a = 0;
+	int b = 10;
+	int div = b / a;
+
+try {
+
+}
+
+return 0;
+}
+

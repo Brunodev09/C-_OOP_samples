@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : staticVarClasses.cpp
+// Author      : brunoDev
+// Version     :
+// Copyright   : Apache 2.0
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Classes" << endl; // prints Classes
+	return 0;
+}

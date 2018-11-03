@@ -1,0 +1,50 @@
+/*
+ * farm.h
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#ifndef FARM_H_
+#define FARM_H_
+#include <iostream>
+
+using namespace std;
+
+class Animal {
+protected:
+	string voice;
+public:
+	Animal();
+	~Animal();
+	virtual string getVoice(); //this warns the compiler about other methods like this
+};
+
+class Dog: public Animal {
+protected:
+	string ID;
+public:
+	Dog();
+	~Dog();
+	 string getVoice() = 0; //This makes the class abstract! So you can't create objects of it
+};
+
+class Cat: public Animal {
+protected:
+	string ID;
+public:
+	Cat();
+	~Cat();
+	 string getVoice();
+};
+
+class Cow: public Animal {
+protected:
+	string ID;
+public:
+	Cow();
+	~Cow();
+	 string getVoice();
+};
+
+#endif /* FARM_H_ */

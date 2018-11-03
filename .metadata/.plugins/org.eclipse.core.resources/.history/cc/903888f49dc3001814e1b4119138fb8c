@@ -1,0 +1,21 @@
+/*
+ * class.cpp
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+using namespace std;
+
+void Person::setAge(int value) {
+		if (value == 0) return;
+		else if (value < 0) age = 0;
+		else if (value > 130) age = 130;
+		else age = value;
+
+}
+
+
+
+

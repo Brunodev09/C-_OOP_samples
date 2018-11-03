@@ -1,0 +1,32 @@
+/*
+ * class.cpp
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "class.h"
+using namespace std;
+
+void Person::setAge(int age) {
+		if (age == 0) return;
+		else if (age < 0) this->age = 0;
+		else if (age > 130) this->age = 130;
+		else this->age = age;
+//.this refers to the age variable in the class we are working it
+}
+
+int Person::getAge() {
+	return age;
+}
+//constructor. Invoked every time an instance of the class is created
+Person::Person() {
+	static int info = 0;
+	//static variables are only created once. Without it, everytime the constructor is invoked the var is created again
+	age = 18;
+	//this defines age value by default. If its not defined elsewhere
+}
+
+
+

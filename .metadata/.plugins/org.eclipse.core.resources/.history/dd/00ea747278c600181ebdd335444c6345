@@ -1,0 +1,30 @@
+/*
+ * name.cpp
+ *
+ *  Created on: Oct 2, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+
+using namespace std;
+
+namespace A {
+	int a  = 10;
+}
+namespace B {
+	int a = 20;
+}
+
+// If I want to use EVERYTHING inside namespace A for example, I can:
+using namespace A;
+
+int main() {
+	cout << A::a << endl;//Acessing namespaces
+	cout << B::a << endl;
+
+	cout << a << endl;//Now I can acess a without scoping operator
+	return 0;
+}
+
+

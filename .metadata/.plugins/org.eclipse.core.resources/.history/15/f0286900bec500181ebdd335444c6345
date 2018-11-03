@@ -1,0 +1,17 @@
+/*
+ * farm.h
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#ifndef FARM_H_
+#define FARM_H_
+
+class Animal {
+
+};
+
+
+
+#endif /* FARM_H_ */

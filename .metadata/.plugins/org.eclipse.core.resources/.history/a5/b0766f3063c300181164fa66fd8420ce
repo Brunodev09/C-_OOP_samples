@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	//argc - arguments counter. ./execution.cpp -one -two -three
+
+	cout << argc << endl;
+	return 0;
+}

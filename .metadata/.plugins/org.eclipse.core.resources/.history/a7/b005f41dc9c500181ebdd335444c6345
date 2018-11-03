@@ -1,0 +1,29 @@
+/*
+ * classNpointers.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class myclass{
+    private:
+        int a,b;
+    public:
+        void setdata(int i,int j){
+            a=i;
+            b=j;
+        }
+};
+
+int main() {
+    myclass *p;
+    p = new myclass;
+    p->setdata(5,6);
+    return 0;
+}

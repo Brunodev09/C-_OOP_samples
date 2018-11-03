@@ -1,0 +1,37 @@
+/*
+ * farm.h
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#ifndef FARM_H_
+#define FARM_H_
+#include <iostream>
+
+using namespace std;
+
+class Animal {
+protected:
+	string voice;
+public:
+	Animal();
+	~Animal();
+	string getVoice();
+};
+
+class Dog : public Animal {
+
+};
+
+class Cat : public Animal {
+
+};
+
+class Cow : public Animal {
+
+};
+
+
+
+#endif /* FARM_H_ */

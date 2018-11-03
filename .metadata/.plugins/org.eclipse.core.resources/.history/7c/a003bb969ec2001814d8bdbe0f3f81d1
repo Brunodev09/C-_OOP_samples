@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : pointerArray.cpp
+// Author      : brunoDev
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Pointers" << endl; // prints Pointers
+	return 0;
+}

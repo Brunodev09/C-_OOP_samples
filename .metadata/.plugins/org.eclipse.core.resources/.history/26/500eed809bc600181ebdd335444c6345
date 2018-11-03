@@ -1,0 +1,18 @@
+/*
+ * bitwiseOp.cpp
+ *
+ *  Created on: Oct 2, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	return 0;
+
+
+
+

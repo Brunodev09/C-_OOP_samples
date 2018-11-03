@@ -1,0 +1,20 @@
+/*
+ * index.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "inheritance.h"
+
+using namespace std;
+
+void opOnPoints();
+
+int main() {
+	return 0;
+}
+
+
+

@@ -1,0 +1,21 @@
+/*
+ * farm.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+
+#include <iostream>
+#include "farm.h"
+
+using namespace std;
+
+Animal::Animal() {
+
+}
+
+Animal::~Animal() {
+
+}
+

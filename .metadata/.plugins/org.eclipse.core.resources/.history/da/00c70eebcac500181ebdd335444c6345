@@ -1,0 +1,28 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+
+#include <iostream>
+#include "farm.h"
+
+using namespace std;
+
+caller(Animal);
+
+int main() {
+	Animal animal;
+	Dog dog;
+	Cat cat;
+	Cow cow;
+
+	cout << animal.getVoice() << endl;
+	cout << dog.getVoice() << endl;
+	cout << cat.getVoice() << endl;
+	cout << cow.getVoice() << endl;
+	return 0;
+}
+

@@ -1,0 +1,6 @@
+18:43:42 **** Incremental Build of configuration Debug for project pointers ****
+make all 
+make: Nothing to be done for 'all'.
+
+18:43:42 Build Finished. 0 errors, 0 warnings. (took 314ms)
+

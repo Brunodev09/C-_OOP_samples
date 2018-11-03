@@ -1,0 +1,22 @@
+16:07:43 **** Incremental Build of configuration Debug for project exceptions ****
+make all 
+Building file: ../app.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"app.d" -MT"app.o" -o "app.o" "../app.cpp"
+../app.cpp:19:37: warning: dynamic exception specifications are deprecated in C++11 [-Wdeprecated]
+ double division(double a, double b) throw(DivisionByZeroException) {
+                                     ^~~~~
+../app.cpp: In function ‘int main()’:
+../app.cpp:26:9: warning: variable ‘result’ set but not used [-Wunused-but-set-variable]
+  double result;
+         ^~~~~~
+Finished building: ../app.cpp
+ 
+Building target: exceptions
+Invoking: GCC C++ Linker
+g++  -o "exceptions"  ./app.o ./exception.o   
+Finished building target: exceptions
+ 
+
+16:07:44 Build Finished. 0 errors, 2 warnings. (took 666ms)
+

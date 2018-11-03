@@ -1,0 +1,50 @@
+/*
+ * name.cpp
+ *
+ *  Created on: Oct 2, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+
+//using namespace std; This contains cout and endl objects
+
+namespace A {
+	int a  = 10;
+}
+namespace B {
+	int a = 20;
+}
+
+	ostream & operator<<(ostream & out, NewCout o) {
+
+	}
+
+namespace mySpace {
+	class NewCout {
+		std::string text;
+	public:
+		NewCout(std::string text ="\n\n\n") {this->text = text;}
+		std::string toString() {return text;}
+
+	};
+	NewCout endl;
+}
+
+// If I want to use EVERYTHING inside namespace A for example, I can:
+//using namespace A;
+/*
+Its good practice to create your own namespace on every project so other programmers can access them
+without having to worry on conflicting name variables
+*/
+
+int main() {
+	std::cout << A::a << mySpace::endl.toString();//Acessing namespaces
+	std::cout << B::a << mySpace::endl.toString();
+	//Constructor default value is skip 3 lines, so as long as I don't enter any arguments it should work as endl
+
+//	std::cout << a << std::endl;//Now I can acess a without scoping operator
+	return 0;
+}
+
+

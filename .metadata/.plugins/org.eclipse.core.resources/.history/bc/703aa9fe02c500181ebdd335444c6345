@@ -1,0 +1,35 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Sep 30, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "copy.h"
+
+
+using namespace std;
+
+int main() {
+
+	Copy obj(50,10,2); //executing constructor with ints
+	Copy obj2 = obj;
+
+	*(obj.p) = 700; //When you copy constructors, you copy the address of variables and pointers
+
+	cout << "obj.x: " << obj.x << endl;
+	cout << "obj.y: " << obj.y << endl;
+	cout << "*(obj.p): " << *(obj.p) << endl;
+
+	cout << endl << endl << endl;
+
+	cout << "obj2.x: " << obj.x << endl;
+	cout << "obj2.y: " << obj.y << endl;
+	cout << "*(obj2.p): " << *(obj.p) << endl;
+
+	return 0;
+}
+
+
+

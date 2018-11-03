@@ -1,0 +1,20 @@
+/*
+ * integer.h
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#ifndef INTEGER_H_
+#define INTEGER_H_
+
+class Integer {
+private:
+	int num;
+public:
+
+};
+
+
+
+#endif /* INTEGER_H_ */

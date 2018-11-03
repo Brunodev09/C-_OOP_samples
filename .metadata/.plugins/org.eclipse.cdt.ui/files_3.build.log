@@ -1,0 +1,22 @@
+03:26:26 **** Incremental Build of configuration Debug for project files_3 ****
+make all 
+Building file: ../files_3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"files_3.d" -MT"files_3.o" -o "files_3.o" "../files_3.cpp"
+../files_3.cpp: In function ‘int main()’:
+../files_3.cpp:25:8: warning: unused variable ‘buffer’ [-Wunused-variable]
+   char buffer[50]; //could use normal array, which is also a pointer
+        ^~~~~~
+../files_3.cpp:29:7: warning: unused variable ‘lines’ [-Wunused-variable]
+   int lines;
+       ^~~~~
+Finished building: ../files_3.cpp
+ 
+Building target: files_3
+Invoking: GCC C++ Linker
+g++  -o "files_3"  ./files_3.o   
+Finished building target: files_3
+ 
+
+03:26:27 Build Finished. 0 errors, 2 warnings. (took 669ms)
+

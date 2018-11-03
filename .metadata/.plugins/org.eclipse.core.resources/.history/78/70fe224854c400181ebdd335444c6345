@@ -1,0 +1,32 @@
+/*
+ * friendClasses.h
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#ifndef FRIENDCLASSES_H_
+#define FRIENDCLASSES_H_
+
+
+class A;//Pre declaration to avoid declaring A first than B
+
+class B {
+
+public:
+	void setSecretValue(A &, int);
+};
+
+
+class A {
+private:
+	int secretValue = 10;
+public:
+	int getSecret(){return secretValue;}
+};
+
+
+
+
+
+#endif /* FRIENDCLASSES_H_ */

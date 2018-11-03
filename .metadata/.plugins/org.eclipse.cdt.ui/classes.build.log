@@ -1,0 +1,15 @@
+03:01:15 **** Incremental Build of configuration Debug for project classes ****
+make all 
+Building file: ../class.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.o" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building target: classes
+Invoking: GCC C++ Linker
+g++  -o "classes"  ./class.o ./first.o   
+Finished building target: classes
+ 
+
+03:01:16 Build Finished. 0 errors, 0 warnings. (took 578ms)
+

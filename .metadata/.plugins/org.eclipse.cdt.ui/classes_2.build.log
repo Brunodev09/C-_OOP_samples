@@ -1,0 +1,15 @@
+23:09:13 **** Incremental Build of configuration Debug for project classes_2 ****
+make all 
+Building file: ../src/staticVarClasses.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/staticVarClasses.d" -MT"src/staticVarClasses.o" -o "src/staticVarClasses.o" "../src/staticVarClasses.cpp"
+Finished building: ../src/staticVarClasses.cpp
+ 
+Building target: classes_2
+Invoking: GCC C++ Linker
+g++  -o "classes_2"  ./src/class.o ./src/friendClasses.o ./src/position.o ./src/staticVarClasses.o   
+Finished building target: classes_2
+ 
+
+23:09:14 Build Finished. 0 errors, 0 warnings. (took 633ms)
+

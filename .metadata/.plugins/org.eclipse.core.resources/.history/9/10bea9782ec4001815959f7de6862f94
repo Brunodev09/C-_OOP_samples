@@ -1,0 +1,26 @@
+/*
+ * position.cpp
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "position.h"
+
+using namespace std;
+
+Position::Position() {
+	cout << "Constructor invoked!" << endl;
+}
+
+Position::~Position() {
+
+}
+
+void getPos() {
+	cout << "x: " << x << "y: " << y << endl;
+}
+
+
+

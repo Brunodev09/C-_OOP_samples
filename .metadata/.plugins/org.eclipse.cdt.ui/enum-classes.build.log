@@ -1,0 +1,23 @@
+15:02:40 **** Build of configuration Debug for project enum-classes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:5:6: error: use of enum ‘dayOfWeek’ without previous declaration
+ enum dayOfWeek = {M, TU, W, TH, F, SA, SU};
+      ^~~~~~~~~
+../main.cpp:5:16: error: expected unqualified-id before ‘=’ token
+ enum dayOfWeek = {M, TU, W, TH, F, SA, SU};
+                ^
+../main.cpp: In function ‘int main()’:
+../main.cpp:9:2: error: ‘dayOfWeek’ was not declared in this scope
+  dayOfWeek d = M;
+  ^~~~~~~~~
+../main.cpp:10:10: error: ‘d’ was not declared in this scope
+  cout << d << endl;
+          ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+
+15:02:40 Build Failed. 6 errors, 0 warnings. (took 525ms)
+

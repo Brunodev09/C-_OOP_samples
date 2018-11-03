@@ -1,0 +1,19 @@
+00:25:02 **** Incremental Build of configuration Debug for project pointersNref ****
+make all 
+Building file: ../pnr.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pnr.d" -MT"pnr.o" -o "pnr.o" "../pnr.cpp"
+../pnr.cpp: In function ‘int main()’:
+../pnr.cpp:18:6: warning: unused variable ‘totalSum’ [-Wunused-variable]
+  int totalSum = sum(&b,100);
+      ^~~~~~~~
+Finished building: ../pnr.cpp
+ 
+Building target: pointersNref
+Invoking: GCC C++ Linker
+g++  -o "pointersNref"  ./pnr.o   
+Finished building target: pointersNref
+ 
+
+00:25:03 Build Finished. 0 errors, 1 warnings. (took 625ms)
+

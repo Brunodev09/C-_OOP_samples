@@ -1,0 +1,32 @@
+/*
+ * index.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "inheritance.h"
+
+using namespace std;
+
+void opOnPoints();
+
+int main() {
+	opOnPoints();
+	return 0;
+}
+
+void opOnPoints() {
+
+	Point p;
+	Point2D p2;
+
+	p.setX(10);
+	p2.set(50,50);
+	cout << p2.getX() << endl;
+	cout << p2.getY() << endl;
+}
+
+
+

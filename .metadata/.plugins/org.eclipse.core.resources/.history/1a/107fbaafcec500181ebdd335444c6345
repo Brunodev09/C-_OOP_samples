@@ -1,0 +1,65 @@
+/*
+ * farm.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+
+#include <iostream>
+#include "farm.h"
+
+using namespace std;
+
+Animal::Animal() {
+	voice = "default";
+}
+
+string Animal::getVoice() {
+	return voice;
+}
+string Dog::getVoice() {
+	return voice;
+}
+
+string Cat::getVoice() {
+	return voice;
+}
+
+string Cow::getVoice() {
+	return voice;
+}
+
+Animal::~Animal() {
+
+}
+
+Dog::Dog() {
+	voice = "woof woof";
+	ID = 0;
+}
+
+Dog::~Dog() {
+
+}
+
+Cat::Cat() {
+	voice = "meow meow";
+	ID = 1;
+}
+
+Cat::~Cat() {
+
+}
+
+Cow::Cow() {
+	voice = "mooh mooh";
+}
+
+Cow::~Cow() {
+
+}
+
+
+
+

@@ -1,0 +1,78 @@
+//============================================================================
+// Name        : enum.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+enum Day {
+	M, Tu, W, Th, F, SA, SU
+};
+
+string getDay(Day);
+void swap(int &, int &);
+
+int main() {
+
+	//Day(0),Day(1),Day(2)...
+	Day d = M;
+	string name = "Bruno";
+	string &ref = name; //This will hold the value and memory address of name. Must be initialized when created. Cannot change reference once created - const
+	//Also must be the same type as the associated variable
+
+	cout << getDay(d) << endl;
+	cout << name << endl;
+	ref = "Maysa";
+	cout << name << endl;
+
+	int a = 10;
+	int b = 20;
+	swap(a, b); //actually gets the address of these variables and change their values
+	cout << a << b << endl;
+
+	//Tye casting
+	int num3 = 7;
+	int num4 = 5;
+	cout << (double)num3/num4 << endl; //explicit way
+
+	int num = 103213;
+	short num2 = 5;
+	num2 = num; //implicit way in C. Can lose even the whole number for obvious reasons
+	static_cast<int>(num2); //implicit way in C++
+	cout << num2 << endl;
+
+	return 0;
+}
+
+string getDay(Day d) {
+	switch (d) {
+	case M:
+		return "Monday";
+	case Tu:
+		return "Thursday";
+	case W:
+		return "Wednesday";
+	case Th:
+		return "Thursday";
+	case F:
+		return "Friday";
+	case SA:
+		return "Saturday";
+	case SU:
+		return "Sunday";
+	default:
+		"You typed something wrong.";
+	}
+}
+
+void swap(int &x, int &y) {
+	int t;
+	t = x;
+	x = y;
+	y = t;
+}

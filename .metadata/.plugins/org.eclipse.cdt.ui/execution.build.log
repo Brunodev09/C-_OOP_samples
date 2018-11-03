@@ -1,0 +1,44 @@
+22:28:25 **** Incremental Build of configuration Debug for project execution ****
+make all 
+Building file: ../exec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"exec.d" -MT"exec.o" -o "exec.o" "../exec.cpp"
+../exec.cpp: In function ‘int main(int, char**)’:
+../exec.cpp:18:29: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *p = {"this is a text"};
+                             ^
+../exec.cpp:20:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  char *b[] = {"this is a test", "this is a test", "this is a test"};
+                                                                   ^
+../exec.cpp:20:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../exec.cpp:20:67: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+../exec.cpp:17:7: warning: unused variable ‘a’ [-Wunused-variable]
+  char a[] = {'a','b', 'c', '\0'};
+       ^
+../exec.cpp:18:8: warning: unused variable ‘p’ [-Wunused-variable]
+  char *p = {"this is a text"};
+        ^
+../exec.cpp:20:8: warning: unused variable ‘b’ [-Wunused-variable]
+  char *b[] = {"this is a test", "this is a test", "this is a test"};
+        ^
+../exec.cpp:22:7: warning: unused variable ‘x’ [-Wunused-variable]
+  char x[] = "a";
+       ^
+../exec.cpp:23:7: warning: unused variable ‘y’ [-Wunused-variable]
+  char y[] = "a";
+       ^
+Finished building: ../exec.cpp
+ 
+Building file: ../firstlib.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"firstlib.d" -MT"firstlib.o" -o "firstlib.o" "../firstlib.cpp"
+Finished building: ../firstlib.cpp
+ 
+Building target: execution
+Invoking: GCC C++ Linker
+g++  -o "execution"  ./exec.o ./firstlib.o   
+Finished building target: execution
+ 
+
+22:28:25 Build Finished. 0 errors, 9 warnings. (took 814ms)
+

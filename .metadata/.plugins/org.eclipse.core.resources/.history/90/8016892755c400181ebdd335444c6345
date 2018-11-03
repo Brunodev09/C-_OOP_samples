@@ -1,0 +1,9 @@
+#include <iostream>
+#include "friendClasses.h"
+
+using namespace std;
+
+
+void setSecretValue(B &obj, int value) {
+	obj.secretValue = value;
+}

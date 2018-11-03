@@ -1,0 +1,35 @@
+/*
+ * index.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "inheritance.h"
+
+using namespace std;
+
+void opOnPoints();
+
+int main() {
+	opOnPoints();
+	return 0;
+}
+
+void opOnPoints() {//As I understood it, we inherit methods and variables but not its values
+
+	Point p;
+	Point2D p2;
+
+	p.setX(10);
+	p2.set(50,100);
+
+	cout << p.getX() << endl;
+
+	cout << p2.getX() << endl;
+	cout << p2.getY() << endl;
+}
+
+
+

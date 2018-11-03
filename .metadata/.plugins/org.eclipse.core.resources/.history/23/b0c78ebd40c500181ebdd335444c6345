@@ -1,0 +1,37 @@
+/*
+ * inheritance.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "inheritance.h"
+
+using namespace std;
+
+Point::Point(int x) {
+	this->x = x;
+}
+
+int Point::getX() {
+	return x;
+}
+
+void Point::setX(int x) {
+	this->x = x;
+}
+
+Point::~Point() {
+
+}
+
+
+Point2D::Point2D(int x, int y) {
+	this->x = x;
+	this->y = y;
+}
+
+Point2D::~Point2D() {
+
+}

@@ -1,0 +1,19 @@
+/*
+ * integer.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "integer.h"
+
+using namespace std;
+
+Integer::Integer() {
+	cout << "Default constructor invoked!";
+}
+
+
+
+

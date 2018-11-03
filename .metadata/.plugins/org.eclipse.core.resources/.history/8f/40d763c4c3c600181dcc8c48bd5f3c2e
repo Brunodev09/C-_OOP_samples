@@ -1,0 +1,31 @@
+/*
+ * files_2.cpp
+ *
+ *  Created on: Oct 3, 2018
+ *      Author: bruno
+ */
+
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+
+	fstream file;
+	file.open("data.txt", ios::in | ios::binary);
+
+	if (file.is_open()) {
+		cout << "File has been opened.";
+		file << "Test";
+		string buffer;
+	do {
+		file >> buffer;
+		cout << buffer << endl;
+	}while(!file.eof());
+	}else cout << "Error in opening file!";
+
+	return 0;
+}
+

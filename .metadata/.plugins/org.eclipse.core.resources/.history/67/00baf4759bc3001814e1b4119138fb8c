@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+class Person {
+private:
+	short age = 0;
+public:
+	void setAge(int value) {
+		if (value == 0) return;
+		else if (value < 0) age = 0;
+		else if (value > 130) age = 130;
+		else age = value;
+	}
+	short getAge() {return age;}
+};
+
+int main() {
+	Person person;
+
+	cout << person.getAge() << endl;
+	person.setAge(21);
+	cout << person.getAge() << endl;
+	return 0;
+}

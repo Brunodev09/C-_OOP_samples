@@ -1,0 +1,24 @@
+/*
+ * copy.cpp
+ *
+ *  Created on: Sep 30, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "copy.h"
+
+using namespace std;
+
+Copy::Copy(int x, int y) {
+	this->x = x; //.this always reffers to the class variables
+	this->y = y;
+}
+
+Copy::~Copy() {
+
+}
+
+
+
+

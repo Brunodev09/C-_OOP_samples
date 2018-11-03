@@ -1,0 +1,19 @@
+/*
+ * class.h
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#ifndef CLASS_H_
+#define CLASS_H_
+
+class User {
+private:
+	int ID;
+public:
+	static int counter;
+};
+
+
+#endif /* CLASS_H_ */

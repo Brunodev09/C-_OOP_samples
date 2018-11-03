@@ -1,0 +1,15 @@
+16:49:19 **** Incremental Build of configuration Debug for project namespaces ****
+make all 
+Building file: ../name.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"name.d" -MT"name.o" -o "name.o" "../name.cpp"
+Finished building: ../name.cpp
+ 
+Building target: namespaces
+Invoking: GCC C++ Linker
+g++  -o "namespaces"  ./name.o   
+Finished building target: namespaces
+ 
+
+16:49:20 Build Finished. 0 errors, 0 warnings. (took 615ms)
+

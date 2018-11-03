@@ -1,0 +1,43 @@
+#include <iostream>
+#include <array>
+using namespace std;
+
+
+void multiply(int &, int);
+int sum(int *, int);
+int *sum2(int *);
+
+int main() {
+	int a = 2;
+	int b = 1;
+	int c = 99;
+
+	multiply(a,2);
+//	sum(&b,100);
+	int totalSum = sum(&b,100);
+	int *p = sum2(&c);
+
+	cout << a << endl;//using reference
+	cout << b << endl;//using pointers
+
+	cout << p << endl;//showing the pointer
+	cout << *p << endl;//showing the value
+	//The vantage of pointers is being able to pass an array to outside functions, while with ref you cannot
+
+	int array[10];
+
+
+	return 0;
+}
+
+void multiply(int &x, int m) {
+	x = x*m;
+}
+
+int sum(int *x, int s) {
+	return *x += s; //value of x + sum
+}
+
+int * sum2(int *pointer) {
+	return pointer;//returning the pointer
+}

@@ -1,0 +1,58 @@
+
+#include <iostream>
+#include "temp.h"
+
+using namespace std;
+
+void opOnPoints();
+
+//Templates are generalizations of functions, so you don't have to iterate between data types to cast
+//This means you create a new type of data
+//An example would be an Adding function that took every type of data: int, double, short etc. I'd need MANY functions
+
+template<typename Thing, typename Thing2>
+
+Thing add(Thing a, Thing2 b) {
+	return a + b;
+}
+//Uncomment this for template of summing objects
+/*template<>
+Point2D add(Point2D a, Point2D b) {
+	Point2D aux;
+
+	aux.setX(a.getX() + b.getX());
+	aux.setY(a.getY() + b.getY());
+	return aux;
+}*/
+typedef Point<int> PointInt; //defines Point as integer
+typedef Point<double> PointDouble;
+typedef Point2D<double> Point2dDouble;
+typedef Point2D<char> PointChar;
+
+typedef Point<int*> PointPointer;
+
+int main() {
+	opOnPoints();
+//	cout << add<int,double>(10,23.5); //specifying which argument is what -> Thing = int and Thing2 = double
+//	static_cast<int>(1.5);//This is a function that runs a template
+	return 0;
+}
+
+void opOnPoints() {
+// How to sum 2 objects values without having a specified operator in the class
+/*	Point2D p(10,20);
+	Point2D p2(20,5);
+	Point2D sum = add(p,p2);
+	cout << sum.getX() << endl;
+	cout << sum.getY() << endl;*/
+
+	PointInt a(5);
+	Point2dDouble b(2.2,3.6);
+	PointChar str(1);
+	PointPointer p(1);
+	cout << endl << b.getX() << endl;
+	cout << b.getY() << endl;
+
+
+}
+

@@ -1,0 +1,27 @@
+/*
+ * friendClasses.h
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#ifndef FRIENDCLASSES_H_
+#define FRIENDCLASSES_H_
+
+class A {
+private:
+	int secretValue = 10;
+public:
+	int getSecret(){return secretValue;}
+};
+
+class B {
+
+public:
+	void setSecretValue(A &, int);
+};
+
+
+
+
+#endif /* FRIENDCLASSES_H_ */

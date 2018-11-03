@@ -1,0 +1,22 @@
+/*
+ * inheritance.h
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#ifndef INHERITANCE_H_
+#define INHERITANCE_H_
+
+class Point {
+	int x;
+public:
+	Point(int);
+	~Point();
+	void getX();
+};
+
+
+
+
+#endif /* INHERITANCE_H_ */

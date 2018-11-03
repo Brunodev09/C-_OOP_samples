@@ -1,0 +1,31 @@
+/*
+ * copy.cpp
+ *
+ *  Created on: Sep 30, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "copy.h"
+
+using namespace std;
+
+Copy::Copy(int x, int y, int value) {
+	this->x = x;
+	this->y = y;
+	this->p = new int(value);
+	//use [] to define an array of data types, use () to define only ONE. In this ex, we are separating only ONE INT.
+}
+
+Copy::Copy(const Copy &obj) {
+
+}
+
+Copy::~Copy() {
+	cout << "Destructor initialized!" << endl;
+	delete p; //not using [] because p is not an array in this case
+}
+
+
+
+

@@ -1,0 +1,37 @@
+/*
+ * integer.cpp
+ *
+ *  Created on: Oct 1, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "integer.h"
+
+using namespace std;
+
+Integer::Integer() {
+
+}
+
+Integer::Integer(int num) {
+	this->num = num;
+}
+
+int Integer::operator +=(Integer o) {
+	num = o.getNum() + num;//This will be called when we attempt to convert our object into a number and sum it
+}
+
+int Integer::getNum() {
+	return num;//This will be called when we attempt to convert our object into an int
+}
+
+Integer::operator int() {
+	return num;
+}
+
+Integer::~Integer() {
+}
+
+
+

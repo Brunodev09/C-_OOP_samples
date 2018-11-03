@@ -1,0 +1,25 @@
+/*
+ * class.cpp
+ *
+ *  Created on: Sep 29, 2018
+ *      Author: bruno
+ */
+
+#include <iostream>
+#include "class.h"
+
+using namespace std;
+
+void User::User() {
+	cout << "Constructor evoked!" << endl;
+	counter++;
+	ID = counter;
+}
+
+int User::getID() {
+	return ID;
+}
+
+
+
+

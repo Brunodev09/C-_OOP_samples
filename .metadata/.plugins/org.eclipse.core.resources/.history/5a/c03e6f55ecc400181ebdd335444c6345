@@ -1,0 +1,19 @@
+/*
+ * copy.h
+ *
+ *  Created on: Sep 30, 2018
+ *      Author: bruno
+ */
+
+#ifndef COPY_H_
+#define COPY_H_
+
+class Copy {
+public:
+	int x, y;
+	Copy(int, int);
+};
+
+
+
+#endif /* COPY_H_ */

@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : pointerArray.cpp
+// Author      : brunoDev
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int arr[3] = {0,20,40,60};//Arrays are pointers!!!
+
+
+	cout << &arr[0] << " " << &arr[1] << " " << &arr[2] << " " << &arr[3];//Point each 4 bytes a new 'variable' address
+	cout << endl << endl;
+
+	cout << *(arr + 0) << endl;//By summing ints we can move the pointer in the array values
+	cout << *(arr + 1) << endl;
+	cout << *(arr + 2) << endl;
+	return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+class Person {
+private:
+	short age;
+public:
+	void setAge(int value) {age = value;}
+};
+
+int main() {
+	Person person;
+//	cout << person.age << endl;
+	return 0;
+}

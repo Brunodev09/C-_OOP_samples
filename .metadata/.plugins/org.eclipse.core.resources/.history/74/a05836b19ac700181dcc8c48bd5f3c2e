@@ -1,0 +1,42 @@
+/*
+ * files_3.cpp
+ *
+ *  Created on: Oct 3, 2018
+ *      Author: bruno
+ */
+
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+	/*getline(bufferStorage, bytes, '\n') Can use any character as a limiter on the third argument - Deletes limiter
+	 * get(bufferStorage, bytes, '\n') Does not delete limiter
+	 * ignore(how_many_chars_to_get and IGNORE, limiter)
+	 *
+	 * */
+
+	fstream file;
+	file.open("data.txt", ios::in | ios::binary);
+
+	if(file.is_open()) {
+		char buffer[50]; //could use normal array, which is also a pointer
+		//char *buffer = new char[50];//dynamic array of chars
+
+
+		do{
+			file.getline(buffer,50);
+
+		}while(!file.eof());
+
+
+	} else cout << "Error!";
+
+
+	return 0;
+}
+
+
+

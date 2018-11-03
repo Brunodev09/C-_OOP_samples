@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+void random(int, int);
+
+int main() {
+
+	srand(time(NULL));//srand -> seedRandom number
+	rand();
+
+
+
+	return 0;
+}
+
+void random(int range, int total) {
+	if (range < total) return;
+
+	srand(time(NULL));
+	int *draw = new int[total];
+
+	for (int i = 0; i < total; i++) {
+		balls[i] = rand();
+	}
+
+	delete []draw;
+}

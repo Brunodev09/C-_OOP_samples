@@ -1,0 +1,19 @@
+00:17:54 **** Incremental Build of configuration Debug for project struct ****
+make all 
+Building file: ../structs.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"structs.d" -MT"structs.o" -o "structs.o" "../structs.cpp"
+../structs.cpp: In function ‘int main()’:
+../structs.cpp:22:10: warning: unused variable ‘pointer’ [-Wunused-variable]
+  person *pointer = &p[0]; //can also be defined as a pointer
+          ^~~~~~~
+Finished building: ../structs.cpp
+ 
+Building target: struct
+Invoking: GCC C++ Linker
+g++  -o "struct"  ./structs.o   
+Finished building target: struct
+ 
+
+00:17:54 Build Finished. 0 errors, 1 warnings. (took 616ms)
+

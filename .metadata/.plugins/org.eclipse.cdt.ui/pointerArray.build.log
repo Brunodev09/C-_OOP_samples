@@ -1,0 +1,19 @@
+19:54:00 **** Incremental Build of configuration Debug for project pointerArray ****
+make all 
+Building file: ../src/pointerArray.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pointerArray.d" -MT"src/pointerArray.o" -o "src/pointerArray.o" "../src/pointerArray.cpp"
+../src/pointerArray.cpp: In function ‘void memory()’:
+../src/pointerArray.cpp:54:7: warning: unused variable ‘pointer’ [-Wunused-variable]
+  int *pointer = new int[amount];
+       ^~~~~~~
+Finished building: ../src/pointerArray.cpp
+ 
+Building target: pointerArray
+Invoking: Cross G++ Linker
+g++  -o "pointerArray"  ./src/pointerArray.o   
+Finished building target: pointerArray
+ 
+
+19:54:01 Build Finished. 0 errors, 1 warnings. (took 571ms)
+
